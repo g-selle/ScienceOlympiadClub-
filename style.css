@@ -1,0 +1,163 @@
+:root {
+    --primary: #7dd3fc;
+    --secondary: #e0f2fe;
+    --accent: #6ee7b7;
+
+    --background: #f8fafc;
+    --surface: #ffffff;
+
+    --text-main: #334155;
+    --text-light: #64748b;
+
+    --border: #e2e8f0;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--background);
+    color: var(--text-main);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 18px 40px;
+
+    background-color: rgba(255,255,255,0.8);
+
+    backdrop-filter: blur(10px);
+
+    border-bottom: 1px solid var(--border);
+
+    position: sticky;
+    top: 0;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+header {
+    text-align: center;
+
+    padding: 90px 20px;
+
+    background: linear-gradient(
+        to bottom right,
+        var(--secondary),
+        #ffffff
+    );
+
+    color: var(--text-main);
+}
+
+button {
+    padding: 12px 22px;
+
+    border: none;
+
+    background: linear-gradient(
+        to right,
+        var(--primary),
+        var(--accent)
+    );
+
+    color: white;
+
+    border-radius: 12px;
+
+    cursor: pointer;
+
+    font-weight: bold;
+
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    transform: translateY(-4px) scale(1.03);
+
+    box-shadow: 0 10px 20px rgba(125, 211, 252, 0.3);
+}
+
+button:active {
+    transform: scale(0.97);
+} 
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px;
+}
+
+.card {
+    background: rgba(255,255,255,0.8);
+
+    backdrop-filter: blur(10px);
+
+    padding: 25px;
+
+    border-radius: 20px;
+
+    width: 230px;
+
+    text-align: center;
+
+    border: 1px solid var(--border);
+
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+
+    box-shadow: 0 15px 30px rgba(0,0,0,0.08);
+}
+
+nav a {
+    color: var(--text-main);
+    text-decoration: none;
+    font-weight: 500;
+
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: var(--primary);
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 200px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.hidden {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.6s ease;
+}
+
+.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.club-img {
+    width: 120px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    border: 3px solid white;
+}
